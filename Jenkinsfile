@@ -36,19 +36,14 @@ to:'git.admin@gmail.com'
               mail bcc: '', body: 'jenkins is  unable to create the artifact from dev code', cc: '', from: '', replyTo: '', subject: 'build failed', to: 'dev.admin@gmail.com'
              exit(1)
         }
-               
-         }
-    stage('ContinuousDeploy')
-        
-     
+   }
+   }
+  }    
+  stage('ContinuousDeploy')
     {
-            
-       
-       steps
-       
-        {
-        
-           script
+      steps
+    {
+        script
         
            {
             
@@ -71,30 +66,15 @@ to:'git.admin@gmail.com'
        
           }
            
-            
-        
-       }
-        
-     
-    }
-         
-    
- stage('ContinuousTesting')
-        
-        
-  {
-            
-         
-     steps
-            
-          
+      }
+      }
+  stage('ContinuousTesting')
+ {
+      steps
      {
-            
-         script
-             
-         {
-                 
-           try
+        script
+        {
+            try
                  
             {
                    
@@ -115,25 +95,13 @@ to:'git.admin@gmail.com'
             }
              
          }
-           
      }
-        
-        
- }
-         
-     
+  }
  stage('ContinuousDelivary')
-        
-     
-  {
-
-          
-      steps
+  { steps
             
-          
-     {
-              
-        script
+   {
+      script
               
         {
                   
@@ -155,22 +123,13 @@ to:'git.admin@gmail.com'
           exit(1)  
                   
           }
-              
-       }
+         }
              
-            
-    }
-        
-     
-   }
-     
-   
-
-                 
        }
+     }
+     }
   }
          
      
 
-   }
-}
+   
