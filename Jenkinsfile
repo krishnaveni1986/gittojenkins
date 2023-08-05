@@ -101,7 +101,7 @@ to:'git.admin@gmail.com'
               git ' https://github.com/intelliqittrainings/FunctionalTesting.git'
              
                   
-               sh 'java -jar /var/lib/jenkins/workspace/Declarativescriptpipeline1/testing.jar'
+               sh 'java -jar /var/lib/jenkins/workspace/Declarativescriptpipeline/testing.jar'
                  
            }
                  
